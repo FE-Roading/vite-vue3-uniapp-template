@@ -19,10 +19,10 @@
       ]
     },
     "typeRoots": [
-      "node_modules/@types/",
-      "node_modules/@@dcloudio/types",
-      "node_modules/miniprogram-api-typings",
-      "types",
+      "./node_modules/@types",
+      "./node_modules/@dcloudio/types",
+      "./node_modules/miniprogram-api-typings",
+      "./types",
     ],
   },
   "include": [
