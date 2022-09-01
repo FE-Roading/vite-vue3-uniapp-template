@@ -29,7 +29,9 @@
     "build:mp-weixin": "uni build -p mp-weixin",
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
-    "build:quickapp-webview-union": "uni build -p quickapp-webview-union"
+    "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
+    "commit": "git-cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3050320220729001",
@@ -49,6 +51,8 @@
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@dcloudio/types": "^3.0.13",
     "@dcloudio/uni-automator": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3050320220729001",
@@ -57,11 +61,20 @@
     "@types/node": "^18.7.14",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
+    "commitizen": "^4.2.5",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-customizable": "^6.9.2",
     "eslint": "^8.23.0",
     "eslint-plugin-vue": "^9.4.0",
     "miniprogram-api-typings": "^3.5.0",
     "sass": "^1.54.8",
     "typescript": "^4.7.4",
-    "vite": "^2.9.14"
+    "vite": "^2.9.14",
+    "husky": "^8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
