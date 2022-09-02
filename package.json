@@ -31,7 +31,8 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3050320220729001",
@@ -65,12 +66,18 @@
     "commitlint-config-cz": "^0.13.3",
     "cz-customizable": "^6.9.2",
     "eslint": "^8.23.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.4.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "miniprogram-api-typings": "^3.5.0",
     "postcss": "^8.4.16",
+    "postcss-html": "^1.5.0",
+    "prettier": "^2.7.1",
     "sass": "^1.54.8",
+    "stylelint": "^14.11.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
     "typescript": "^4.7.4",
     "vite": "^2.9.14"
   },

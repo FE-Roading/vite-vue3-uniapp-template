@@ -2,11 +2,11 @@
  * `JavaScript`类型
  * - 这里只枚举一些常见类型，后续根据使用场景自行添加即可
  */
- type JavaScriptTypes = "string" | "number" | "array" | "object" | "boolean" | "function" | "null" | "undefined" | "regexp" | "promise" | "formdata";
+ declare type JavaScriptTypes = "string" | "number" | "array" | "object" | "boolean" | "function" | "null" | "undefined" | "regexp" | "promise" | "formdata";
 
 
 /** `uni-app`change事件参数 */
-interface UniAppChangeEvent<T> {
+declare interface UniAppChangeEvent<T> {
   detail: {
     /** `@change`事件触发的值 */
     value: T
@@ -14,7 +14,7 @@ interface UniAppChangeEvent<T> {
 }
 
 /** 请求配置 */
-interface RequestOptions {
+declare interface RequestOptions {
   /**
    * 请求头配置（header 中不能设置 Referer。），会覆盖默认设置
    * - 需要表单形式就`headers: { 'codeMode': 'form' }`;
@@ -32,7 +32,7 @@ interface RequestOptions {
 }
 
 /** 接口请求基础响应数据 */
-interface ApiResult<T = any> {
+declare interface ApiResult<T = any> {
   /** 接口状态`code === 1`为成功 */
   code: number
   /** 接口响应数据 */
@@ -42,7 +42,25 @@ interface ApiResult<T = any> {
 }
 
 /** 接口请求列表响应数据 */
-interface ApiResultList<T = any> extends PageInfo {
+declare interface ApiResultList<T = any> extends PageInfo {
   /** 列表数据 */
   list: Array<T>
+}
+
+/** 页码信息 */
+declare interface PageInfo {
+  /** 一页多少条 */
+  pageSize: number
+  /** 当前页，从`1`开始 */
+  currentPage: number
+  /** 总数 */
+  total?: number
+}
+
+/** `uni-app`change事件参数 */
+declare interface UniAppChangeEvent<T> {
+  detail: {
+    /** `@change`事件触发的值 */
+    value: T
+  }
 }

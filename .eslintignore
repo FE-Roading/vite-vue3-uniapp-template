@@ -1,0 +1,6 @@
+mock
+node_modules
+src/services/mods
+
+<!-- 忽略tinymce中文翻译 -->
+zh_CN.js
