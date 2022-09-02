@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-import store from "../index"
+import store from "./index"
 
 export type DemoUser = {
   name: string

@@ -2,18 +2,26 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{ title }}</text>
+      <text class="title">Login Status: {{ isLogined }}</text>
     </view>
-    <view>
+    <view v-if="isLogined">
       <text>Go to: </text>
       <navigator url="../demo/index">Demo Users</navigator>
+    </view>
+    <view v-else>
+      <button type="primary" @click="login" :loading="loginLoading">登陆</button>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('Hello')
+import { storeToRefs } from "pinia"
+import useUserStore from "@/store/user"
+
+const store = useUserStore()
+const { getLoginStatus: isLogined, loginLoading } = storeToRefs(store)
+const { login } = store
+
 </script>
 
 <style>

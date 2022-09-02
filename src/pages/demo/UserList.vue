@@ -11,7 +11,7 @@
 import { computed } from "vue"
 import { storeToRefs } from "pinia"
 
-import useDemoStore from "@/stores/demo"
+import useDemoStore from "@/store/demo"
 
 type IndexProps = {
   className?: string

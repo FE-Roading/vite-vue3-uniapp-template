@@ -1,4 +1,4 @@
-### 集成小程序的云函数开发
+## 集成小程序的云函数开发
 
 选择了微信小程序云开发作为后端，有如下两个缺点：
 - 使用了微信小程序云开发后，uniapp 只适用于编译成微信小程序，失去了跨端的能力。
@@ -40,3 +40,7 @@
 
 ![cloudfunction-category](./cloudfunction-category.png)
 
+## 其他组件库接入
+[参考文章](https://juejin.cn/post/7128218112360448030)
+
+[引入tailwind.css](https://github.com/dcasia/mini-program-tailwind)

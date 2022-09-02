@@ -12,7 +12,7 @@
 import { storeToRefs } from "pinia"
 import { onMounted } from "vue"
 
-import useDemoStore from "@/stores/demo"
+import useDemoStore from "@/store/demo"
 
 import UserList from "./UserList.vue"
 

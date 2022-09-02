@@ -1,6 +1,6 @@
 import { createSSRApp } from "vue";
 
-import store from "@/stores"
+import store from "@/store"
 
 import App from "./App.vue"
 
